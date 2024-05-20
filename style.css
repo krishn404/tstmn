@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Press+Start+2P&family=Rammetto+One&display=swap');
+
+body {
+    background-color: #d5bdaf;
+}
+
+h2, h4 {
+    margin-bottom: 20px;
+}
+
+.row {
+    height: auto;
+}
+
+.card {
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 5vh;
+}
+
+.rounded-circle {
+    height: 50px;
+    width: 50px;
+    margin-left: -10vh;
+}
+
+.card-body {
+    padding: 40px 20px;
+    background-color: #f5ebe0;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+    margin-left: 2vh;
+}
+
+.card-rate {
+    margin-bottom: 0;
+    margin-left: 2vh;
+}
+
+.mb-3 {
+    background-color: #d8d2cc;
+    margin-top: -4vh;
+    height: 10vh;
+    width: 46vh;
+    margin-left: -2vh;
+}
+
+.card:hover .mb-3 {
+    background-color: rgb(252, 121, 73);
+}
+
+.card:hover .star-row svg {
+    fill: white;
+}
+
+.card:hover {
+    box-shadow: 0 20px 1px -6px rgba(255, 68, 0, 0.534);
+}
+
+.card-text {
+    position: relative;
+}
+
+.card-text::before {
+    content: "";
+    position: absolute;
+    top: 2vh;
+    left: 20px;
+    width: 8vh;
+    height: 0.51vh;
+    background-color: orange;
+    transform: translateY(-50%);
+}
+
+.card-texts {
+    font-size: 0.9em;
+}
+
+.card-texts::before,
+.card-texts::after {
+    content: "\201C";
+    font-size: 1.5em;
+    color: orange;
+}
+
+.card-texts::after {
+    content: "\201D";
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-indicators {
+    position: static;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-indicators li {
+    background-color: #ff6600;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: #333;
+}
+
+.title {
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    word-spacing: 1vh;
+    font-size: 3rem;
+    color: black;
+}
+
+@media (max-width: 767px) {
+    .card {
+        margin-top: 3vh;
+    }
+
+    .rounded-circle {
+        margin-left: -5vh;
+    }
+
+    .mb-3 {
+        height: 8vh;
+        width: 70vh;
+        margin-left: -3vh;
+    }
+
+    .card-text::before {
+        width: 6vh;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .card {
+        margin-top: 4vh;
+    }
+    .card-title{
+        font-size: 14px;
+        margin-left: -1vh;
+    }
+    .star-row{
+
+margin-left: 0vh;
+
+}
+    .rounded-circle {
+        margin-left: -3vh;
+    }
+
+    .mb-3 {
+        height: 9vh;
+        width: 27vh;
+        margin-left: -1.5vh;
+    }
+    .card-text::before {
+        width: 4vh;
+        margin-left: -34px;
+        margin-top: -2px;
+    }
+    .title {
+        font-size: 2.8rem;
+    }
+    .card-texts.card-texts {
+        font-size: 11px;
+        width: 199px;
+        margin-left: -17px;
+        /* height: 25vh; */
+    }
+    
+}
