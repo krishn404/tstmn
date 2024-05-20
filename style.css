@@ -44,8 +44,8 @@ h2, h4 {
     background-color: #d8d2cc;
     margin-top: -4vh;
     height: 10vh;
-    width: 46vh;
-    margin-left: -2vh;
+    width: 48.7vh;
+    margin-left: -2.8vh;
 }
 
 .card:hover .mb-3 {
@@ -155,41 +155,124 @@ h2, h4 {
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-    .card {
-        margin-top: 4vh;
+
+/* For screen sizes between 758px and 1168px */
+@media (max-width: 1169px) {
+    .mb-3{
+        max-width: 40vh;
+        margin-left: -2.6vh;
     }
     .card-title{
-        font-size: 14px;
-        margin-left: -1vh;
+        margin-left: 2vh;
     }
     .star-row{
-
-margin-left: 0vh;
-
+        margin-left: 2vh;
+    }
+    .rounded-circle{
+        margin-left: 2vh;
+    }
+    .card-text::before{
+        margin-left: -3vh;
+    }
 }
+/* For screen sizes between 768px and 990px */
+@media (min-width: 768px) and (max-width: 990px) {
+    .mb-3 {
+        max-width: 29.2vh;
+        margin-left: -2.8vh;
+    }
+    .card-title {
+        margin-left: 1.8vh;
+    }
+    .star-row {
+        margin-left: 1.8vh;
+    }
     .rounded-circle {
+        margin-left: 1.8vh;
+    }
+    .card-text::before {
+        margin-left: -3.8vh;
+        width: 4vh;
+    }
+    @media (min-width: 768px) and (max-width: 990px) {
+        .card-texts {
+            font-size: 0.9em;
+            width: 26vh;
+            margin-left: -2vh;
+        }
+    }
+}
+/* For smaller screens */
+@media (max-width: 767px) {
+    .mb-3 {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+    }
+
+    .rounded-circle,
+    .star-row,
+    .card-title {
+        margin-left: 0;
+    }
+
+    .card-texts {
+        text-align: center;
+    }
+}
+
+/* For medium screens */
+/* @media (min-width: 768px) and (max-width: 990px) {
+    .mb-3 {
+        max-width: 40vh;
+        margin-left: -2.6vh;
+    }
+
+    .card-title {
+        margin-left: 2vh;
+    }
+
+    .star-row {
+        margin-left: 2vh;
+    }
+
+    .rounded-circle {
+        margin-left: 2vh;
+    }
+
+    .card-text::before {
         margin-left: -3vh;
     }
 
+    .card-texts {
+        text-align: justify;
+    }
+} */
+
+/* For larger screens */
+@media (min-width: 991px) {
     .mb-3 {
-        height: 9vh;
-        width: 27vh;
-        margin-left: -1.5vh;
+        max-width: 50vh;
+        margin-left: -3vh;
     }
+
+    .card-title {
+        margin-left: 2vh;
+    }
+
+    .star-row {
+        margin-left: 2vh;
+    }
+
+    .rounded-circle {
+        margin-left: 2vh;
+    }
+
     .card-text::before {
-        width: 4vh;
-        margin-left: -34px;
-        margin-top: -2px;
+        margin-left: -3vh;
     }
-    .title {
-        font-size: 2.8rem;
+
+    .card-texts {
+        text-align: justify;
     }
-    .card-texts.card-texts {
-        font-size: 11px;
-        width: 199px;
-        margin-left: -17px;
-        /* height: 25vh; */
-    }
-    
 }
